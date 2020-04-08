@@ -1,13 +1,13 @@
 
-const proPic = require("./api");
+// const proPic = require("./api");
 
 
 // module.exports = generateMarkdown;
-function generateMarkdown(data) {
+function generateMarkdown(answers, avatar) {
   return `
-# ${data.title}\n
+# ${answers.title}\n
 ## Description \n
-${data.description}\n
+${answers.description}\n
 ## Table of Contents \n
 - [Installation](#installation)\n
 - [Usage](#usage)\n
@@ -16,17 +16,17 @@ ${data.description}\n
 - [Tests](#tests)\n
 - [Questions](#questions)\n
 ## Installation \n
-${data.installation}\n
+${answers.installation}\n
 ## Usage \n
-${data.usage}\n
+${answers.usage}\n
 ## License \n
-${data.license}\n
+${answers.license}\n
 ## Contributing \n
-${data.contributing}\n
+${answers.contributing}\n
 ## Tests \n
-${data.test}\n
+${answers.test}\n
 ## Questions \n
-![Profile Image](${data.avatar})
+![Profile Image](${avatar})
 `;
 }
 module.exports = generateMarkdown;

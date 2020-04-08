@@ -1,7 +1,7 @@
-const fs = require("fs");
-const axios = require("axios");
-const inquirer = require("inquirer");
-const generate = require("./generateMarkdown")
+// const fs = require("fs");
+// const axios = require("axios");
+// const inquirer = require("inquirer");
+// const generate = require("./generateMarkdown")
 
 
 

@@ -1,7 +1,6 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 const axios = require("axios");
-const getUserApi = require("./utils/api")
 const generate = require("./utils/generateMarkdown")
 
 
@@ -33,26 +32,26 @@ const questions = [
         type: "input",
         message: "Install Instructions: "
     },
-    // {
-    //     name: "usage",
-    //     type: "input",
-    //     message: "Usage: "
-    // },
-    // {
-    //     name: "license",
-    //     type: "input",
-    //     message: "License: "
-    // },
-    // {
-    //     name: "contributing",
-    //     type: "input",
-    //     message: "Contributing: "
-    // },
-    // {
-    //     name: "test",
-    //     type: "input",
-    //     message: "Tests: "
-    // },
+    {
+        name: "usage",
+        type: "input",
+        message: "Usage: "
+    },
+    {
+        name: "license",
+        type: "input",
+        message: "License: "
+    },
+    {
+        name: "contributing",
+        type: "input",
+        message: "Contributing: "
+    },
+    {
+        name: "test",
+        type: "input",
+        message: "Tests: "
+    },
 
 ];
 
@@ -62,17 +61,29 @@ function init() {
     // prompt questions
     inquirer.prompt(questions)
         .then(answers => {
+            console.log(answers);
+            const queryUrl = `https://api.github.com/users/${answers.username}`;
+            axios
+                .get(queryUrl)
+                .then(res => {
+                    console.log(res.data)
+                    const avatar = res.data.avatar_url;
 
-            // send answers to generate markdown
-            fs.writeFile('README.md', generate(answers), function (err) {
-                if (err) throw err;
-                console.log("it worked");
-                console.log(answers);
-            });
-
-            console.log("the file has been saved");
-            // send username to axios in api.js for github response data
-            getUserApi.getUser(answers);
+                    // send answers to generate markdown
+                    fs.writeFile('README.md', generate(answers, avatar), function (err) {
+                        if (err) throw err;
+                        console.log(answers);
+                        console.log("it worked");
+                        
+                    });
+                    console.log("the file has been saved");
+                    // append email at the end of the questions
+                    fs.appendFile('README.md', answers.email, function (err) {
+                        if (err) throw err;
+                        console.log("API call complete!");
+                    })
+                    return avatar
+                })
         })
         .catch(error => {
             if (error.isTtyError) {

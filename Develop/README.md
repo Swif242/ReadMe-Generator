@@ -1,9 +1,9 @@
 
-# 
+# ReadMe Generator
 
 ## Description 
 
-
+when application is run you will be asked a series of questions about your project, the answers will then be used to automatically generate a readme file
 
 ## Table of Contents 
 
@@ -21,25 +21,25 @@
 
 ## Installation 
 
-
+idk yet
 
 ## Usage 
 
-undefined
+Quickly and easily creat a readme file for your project
 
 ## License 
 
-undefined
+none
 
 ## Contributing 
 
-undefined
+me
 
 ## Tests 
 
-undefined
+lots
 
 ## Questions 
 
-![Profile Image](undefined)
-swif242@hotmail.com
+![Profile Image](https://avatars3.githubusercontent.com/u/58095369?v=4)
+JRNels242@gmail.com
