@@ -1,2 +1,0 @@
-# ReadMe-Generator
-ReadMe Generator
