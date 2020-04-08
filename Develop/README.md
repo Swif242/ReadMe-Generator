@@ -1,9 +1,11 @@
 
+
+[![Project Badge](https://img.shields.io/badge/Application-Awesome-green)](https://github.com/Swif242/ReadMe-Generator)
 # ReadMe Generator
 
 ## Description 
 
-when application is run you will be asked a series of questions about your project, the answers will then be used to automatically generate a readme file
+when the application is run you will be asked a series of questions about your project, the answers will then be used to automatically generate a readme file
 
 ## Table of Contents 
 
@@ -21,11 +23,11 @@ when application is run you will be asked a series of questions about your proje
 
 ## Installation 
 
-idk yet
+None
 
 ## Usage 
 
-Quickly and easily creat a readme file for your project
+Quickly and easily create a readme file
 
 ## License 
 
@@ -33,11 +35,11 @@ none
 
 ## Contributing 
 
-me
+Just me
 
 ## Tests 
 
-lots
+Many
 
 ## Questions 
 
