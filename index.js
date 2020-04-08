@@ -1,7 +1,7 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 const axios = require("axios");
-const generate = require("./utils/generateMarkdown")
+const generate = require("./Develop/utils/generateMarkdown")
 
 
 const questions = [
