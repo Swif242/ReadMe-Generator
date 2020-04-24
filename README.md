@@ -41,7 +41,13 @@ Just me
 
 Many
 
+## Deployed
+
+https://github.com/Swif242/ReadMe-Generator/blob/master/README.md
+
+# Readme created using my ReadMe-Generator node.js CLI app
+
 ## Questions 
 
 ![Profile Image](https://avatars3.githubusercontent.com/u/58095369?v=4)
-JRNels242@gmail.com
+JRNels242@gmail.comswif242

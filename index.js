@@ -52,6 +52,11 @@ const questions = [
         type: "input",
         message: "Tests: "
     },
+    {
+        name: "deploy",
+        type: "input",
+        message: "Deployed: "
+    },
 
 ];
 
@@ -70,7 +75,7 @@ function init() {
                     const avatar = res.data.avatar_url;
 
                     // send answers to generate markdown
-                    fs.writeFile('README.md', generate(answers, avatar), function (err) {
+                    fs.writeFile('Template.md', generate(answers, avatar), function (err) {
                         if (err) throw err;
                         console.log(answers);
                         console.log("it worked");

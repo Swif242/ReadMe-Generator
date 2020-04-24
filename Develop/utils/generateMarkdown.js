@@ -27,6 +27,8 @@ ${answers.license}\n
 ${answers.contributing}\n
 ## Tests \n
 ${answers.test}\n
+## Deployed
+${answers.deploy}
 ## Questions \n
 ![Profile Image](${avatar})
 `;
