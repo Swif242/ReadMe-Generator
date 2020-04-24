@@ -50,8 +50,6 @@ https://github.com/Swif242/ReadMe-Generator/blob/master/README.md
 ## Questions 
 
 ![Profile Image](https://avatars3.githubusercontent.com/u/58095369?v=4)
-<<<<<<< HEAD
-JRNels242@gmail.comswif242
-=======
+
 JRNels242@gmail.com
->>>>>>> c48b4423f96ae99bcf5e69a5ca8d839221f2b524
+
