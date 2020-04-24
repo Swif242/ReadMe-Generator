@@ -5,7 +5,7 @@
 
 ## Description 
 
-When the application is run, the user will be asked a series of questions about the users project. Then the answers will be used to automatically generate a readme file.
+When the CLI application is run using node.js, the user will be asked a series of questions about the users project. Then the answers will be used to automatically generate a readme file.
 
 ## Table of Contents 
 
